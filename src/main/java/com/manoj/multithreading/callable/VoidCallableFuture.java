@@ -12,7 +12,7 @@ public class VoidCallableFuture implements Callable<Void> {
 	@Override
 	public Void call() throws Exception {
 		// Add implementation
-		// always return value is null
+		// Always return value is null for Void Callable
 		return null;
 	}
 
