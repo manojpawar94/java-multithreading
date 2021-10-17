@@ -40,7 +40,9 @@ public class ThreadUtils {
 			} finally {
 				if (hasFirstLock && !hasSecondLock) {
 					firstLock.unlock();
-				} else if (!hasFirstLock && hasSecondLock) {
+				}
+
+				if (!hasFirstLock && hasSecondLock) {
 					secondLock.unlock();
 				}
 			}
